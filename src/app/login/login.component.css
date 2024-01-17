@@ -1,0 +1,46 @@
+/* styles.css (or your preferred CSS file) */
+
+/* Container styling */
+div {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding and border don't increase the element's width */
+}
+
+/* Button styling */
+button {
+  background-color: #007ad9;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Error message styling */
+div[style="color: red;"] {
+  margin-top: 10px;
+  text-align: center;
+}

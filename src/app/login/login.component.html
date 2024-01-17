@@ -1,0 +1,15 @@
+<!-- login.component.html -->
+<div>
+    <label>Username:</label>
+    <input type="text" [(ngModel)]="username" minlength="3" name="username" #name="ngModel" required>
+    <span *ngIf="name.invalid && name.touched" style="color: red;">username is required..</span>
+    <br><br>
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="password" minlength="3" name="password" required #pass="ngModel">
+    <span *ngIf="pass.invalid && pass.touched" style="color: red;">Password is required</span>
+    <br>
+    <button (click)="login()" >Login</button>
+    <div *ngIf="loginError" style="color: red;">Invalid username or password</div>
+  </div>
+  <!-- login.component.html -->
+
